@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | TerraNova GeoEnergy Ltd</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="output.css">
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full z-50 bg-black/70 backdrop-blur-md px-6 md:px-10 py-3">
+
+    <div class="flex justify-between items-center">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <img src="../images/Logo1.png" alt="" class="w-12">
+            <img src="../images/Logo2.png" alt="" class="w-20">
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-8 text-sm">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="OurServices.html" class="text-green-400">Services</a>
+            <!-- <a href="#">Projects</a> -->
+            <!-- <a href="contact.html">Contact</a> -->
+        </div>
+
+        <!-- Desktop Button -->
+        <button class="hidden md:block border border-green-400 px-4 py-2 rounded-full text-green-400    hover:bg-green-400 hover:text-black transition">
+            <a href="contact.html" class="">Get in Touch</a>
+        </button>
+
+        <!-- Hamburger -->
+        <button id="menu-btn" class="md:hidden text-2xl text-green-400 focus:outline-none">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col mt-4 bg-black/90 backdrop-blur-lg rounded-xl p-6 space-y-4   md:hidden transition-all duration-300">
+
+        <a href="../index.html" class="block ">Home</a>
+        <a href="about.html" class="block">About</a>
+        <a href="OurServices.html" class="block text-green-400">Services</a>
+        <!-- <a href="#" class="block">Projects</a> -->
+        <!-- <a href="#" class="block">Contact</a> -->
+        
+        <button class="w-full mt-4 border border-green-400 px-4 py-2 rounded-full text-green-400      hover:bg-green-400 hover:text-black transition">
+            <a href="contact.html" class="">Get in Touch</a>
+        </button>
+
+    </div>
+
+</nav>
+<!-- JavaScript -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+        
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+<!-- HERO -->
+<section class="h-[70vh] flex items-center px-6 md:px-10"
+style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../images/Hero.png'); background-size: cover;">
+
+  <div class="max-w-2xl">
+    <p class="text-green-400 mb-2">OUR SERVICES</p>
+
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+      Solutions that <br> Power Progress
+    </h1>
+
+    <p class="mt-4 text-gray-300">
+      TerraNova GeoEnergy Ltd delivers innovative, reliable and sustainable geological and energy solutions tailored to meet the world’s evolving needs.
+    </p>
+  </div>
+
+</section>
+
+<!-- SERVICES GRID -->
+<section class="py-20 px-6 md:px-10 bg-black text-center">
+
+  <p class="text-green-400 mb-2">WHAT WE DO</p>
+  <h2 class="text-3xl md:text-4xl font-bold mb-12">Our Core Services</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <!-- Card -->
+    <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-green-400 transition">
+      <img src="../images/GeoExploration.png" class="h-48 w-full object-cover">
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold">Geological Exploration</h3>
+        <p class="text-gray-400 mt-2 text-sm">
+          Advanced geoscience and subsurface exploration to identify opportunities and de-risk investment.
+        </p>
+        <a href="#" class="text-green-400 text-sm mt-4 inline-block">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-green-400 transition">
+      <img src="../images/BoreholeDrilling.png" class="h-48 w-full object-cover">
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold">Drilling & Well Services</h3>
+        <p class="text-gray-400 mt-2 text-sm">
+          End-to-end drilling solutions using modern technology and industry best practices.
+        </p>
+        <a href="#" class="text-green-400 text-sm mt-4 inline-block">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-green-400 transition">
+      <img src="../images/soilInvestigation.png" class="h-48 w-full object-cover">
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold">Soil Investigation</h3>
+        <p class="text-gray-400 mt-2 text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, amet.
+        </p>
+        <a href="#" class="text-green-400 text-sm mt-4 inline-block">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-green-400 transition">
+      <img src="../images/Solar.jfif" class="h-48 w-full object-cover">
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold">Renewable Energy Solutions</h3>
+        <p class="text-gray-400 mt-2 text-sm">
+          Solar, wind and hybrid energy systems for a cleaner and more sustainable future.
+        </p>
+        <a href="#" class="text-green-400 text-sm mt-4 inline-block">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-green-400 transition">
+      <img src="../images/projectManagement.png" class="h-48 w-full object-cover">
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold">Project Managementh3>
+        <p class="text-gray-400 mt-2 text-sm">
+          Environmental impact assessment and sustainable resource management solutions.
+        </p>
+        <a href="#" class="text-green-400 text-sm mt-4 inline-block">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-green-400 transition">
+      <img src="../images/constSupport.png" class="h-48 w-full object-cover">
+      <div class="p-6 text-left">
+        <h3 class="text-xl font-semibold">Constructtion Support</h3>
+        <p class="text-gray-400 mt-2 text-sm">
+          Strategic consulting to optimize operations, manage risk and create long-term value.
+        </p>
+        <a href="#" class="text-green-400 text-sm mt-4 inline-block">Learn more →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- APPROACH SECTION -->
+<!-- <section class="py-20 px-6 md:px-10 text-center"
+style="background: url('../images/bg.png'); background-size: cover;">
+
+  <p class="text-green-400 mb-2">OUR APPROACH</p>
+  <h2 class="text-3xl md:text-4xl font-bold mb-12">
+    Science. Innovation. Sustainability.
+  </h2>
+
+  <div class="grid md:grid-cols-4 gap-8 text-sm">
+
+    <div>
+      <h3 class="text-green-400 font-bold">Research & Understand</h3>
+      <p class="text-gray-300 mt-2">We study the earth and uncover opportunities.</p>
+    </div>
+
+    <div>
+      <h3 class="text-green-400 font-bold">Innovate & Design</h3>
+      <p class="text-gray-300 mt-2">Smart, cost-effective energy solutions.</p>
+    </div>
+
+    <div>
+      <h3 class="text-green-400 font-bold">Implement & Deliver</h3>
+      <p class="text-gray-300 mt-2">Precise execution with measurable results.</p>
+    </div>
+
+    <div>
+      <h3 class="text-green-400 font-bold">Monitor & Sustain</h3>
+      <p class="text-gray-300 mt-2">Continuous improvement for sustainability.</p>
+    </div>
+
+  </div>
+
+</section> -->
+
+<!-- CTA -->
+<section class="bg-gray-900 py-12 px-6 md:px-10 flex flex-col md:flex-row justify-between items-center gap-6">
+
+  <div>
+    <h2 class="text-2xl font-bold">Ready to work with us?</h2>
+    <p class="text-gray-400">Let’s discuss how we can help you achieve your goals.</p>
+  </div>
+
+  <button class="bg-green-500 px-6 py-3 rounded-full text-black font-semibold hover:bg-green-600 transition">
+    <a href="contact.html" class="">Get in Touch →</a>
+  </button>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-gray-400 py-10 px-6 md:px-10">
+
+  <div class="grid md:grid-cols-3 gap-10">
+
+    <div class="">
+        <div class="flex items-center gap-4 mb-4">      
+            <img src="../images/Logo1.png" class="w-12">
+            <img src="../images/Logo2.png" alt="" class="w-20">
+        </div>
+        <p>Innovative geological and energy solutions for a sustainable future.</p>
+    </div>
+
+    <div>
+      <h3 class="text-white mb-3">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="index.html">Home</a></li>
+        <li>About</li>
+        <li class="text-green-400">Services</li>
+        <!-- <li>Contact</li> -->
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white mb-3">Contact</h3>
+      <p>Abuja, Nigeria</p>
+      <p>+234 806 158 2778</p>
+      <p>terranovageoenergy@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-10 border-t border-gray-800 pt-5">
+    © 2026 TerraNova GeoEnergy Ltd
+  </div>
+
+</footer>
+
+</body>
+</html>
