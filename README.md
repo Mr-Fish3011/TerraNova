@@ -1,2 +1,2 @@
 # TerraNova
-A private GeoEnergy Firm
+A private GeoEnergy Firm.
